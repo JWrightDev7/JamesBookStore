@@ -15,3 +15,7 @@ Tuesday Nov 2nd
 	-Created the admin area that allows admins to have a view as well
 	-removed the controllers and models folders from each of the new areas
 	-worked on fixing the dropdown menu
+
+Wednesday Nov 3rd
+	-Fixed Dropdown menu issue of not expanding
+	-finished up readme for part 1
