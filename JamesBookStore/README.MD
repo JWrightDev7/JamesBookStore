@@ -9,6 +9,9 @@
 	-Created 3 different class libraries. DataAccess, Utility, Models
 	-Installed EntityFrameworkCore
 	-Added Project references between each of the class libraries and the main project to allow use of the data in each
-	-
 
 Tuesday Nov 2nd
+	-created area for customers and moved the home view to the customer area
+	-Created the admin area that allows admins to have a view as well
+	-removed the controllers and models folders from each of the new areas
+	-worked on fixing the dropdown menu
