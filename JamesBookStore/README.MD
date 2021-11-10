@@ -28,4 +28,7 @@ Wednesday Nov 10th
 	- 9:15am Created the initial migration for the database in JamesBooks.DataAccess
 	- 9:16am Update the database with the update-database command in nuget package manager console 
 	- 9:25am Created Category Class in Models project.
-	- 
+	- 9:32am Created a new migration and updated the database to include the category table
+	- 9:40am Created IRepository Interface
+	- 9:50am Added CRUD to the Interface
+	- 10:03am Created Repository class to implement the interface to allow the CRUD functions to work
