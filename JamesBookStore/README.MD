@@ -34,3 +34,4 @@ Wednesday Nov 10th
 	- 10:03am Created Repository class to implement the interface to allow the CRUD functions to work
 	- 10:12am Created ICategoryRepository Interface and CategoryRepository class to implement the functions of the interface
 	- 10:15am Implemented the interface into the CategoryRepository Class.
+	- 10:30am Created ISP_Call interface and SP_Call Class to work with the database
