@@ -32,3 +32,5 @@ Wednesday Nov 10th
 	- 9:40am Created IRepository Interface
 	- 9:50am Added CRUD to the Interface
 	- 10:03am Created Repository class to implement the interface to allow the CRUD functions to work
+	- 10:12am Created ICategoryRepository Interface and CategoryRepository class to implement the functions of the interface
+	- 10:15am Implemented the interface into the CategoryRepository Class.
