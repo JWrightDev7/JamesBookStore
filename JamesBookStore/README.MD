@@ -20,3 +20,12 @@ Tuesday Nov 2nd
 Wednesday Nov 3rd
 	-Fixed Dropdown menu issue of not expanding
 	-finished up readme for part 1
+
+
+
+Part 2
+Wednesday Nov 10th
+	- 9:15am Created the initial migration for the database in JamesBooks.DataAccess
+	- 9:16am Update the database with the update-database command in nuget package manager console 
+	- 9:25am Created Category Class in Models project.
+	- 
