@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace JamesBookStore.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -40,4 +40,5 @@ Sunday Nov 14th
 	- 9:35am Finished creating the SP_Call Class
 	- 9:45am Created both the IUnitOfWork Interface and the UnitOfWork Class to implement the interface.
 	- 10:00am Registered the IUnitOfWork interface and the implementation of it in the UnitOfWork Class in the configure services of the startup.cs so it can be used by any controller
-	- 
+	- 10:10am Created the CategoryController controller and the index.cshtml view for the controller
+	- 10:30am Added the link to the admin categories index page into the dropdown menu on the navigation, Implemented the icons from font awesome and added the category javascript file
