@@ -6,11 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JamesBooks.DataAccess
+namespace JamesBooks.DataAccess.Repository
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _db;
+        public ICategoryRepository Category { get; private set; }
+        public ISP_Call SP_Call { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
@@ -19,9 +21,15 @@ namespace JamesBooks.DataAccess
             SP_Call = new SP_Call(_db);
         }
 
-        public ICategoryRepository Category { get; private set; }
+        public void Dispose()
+        {
+            _db.Dispose();
+        }
 
-        public ISP_Call SP_Call { get; private set; }
+        public void Save()
+        {
+            _db.SaveChanges();
+        }
 
     }
 }
