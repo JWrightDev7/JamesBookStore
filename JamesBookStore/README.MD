@@ -35,3 +35,8 @@ Wednesday Nov 10th
 	- 10:12am Created ICategoryRepository Interface and CategoryRepository class to implement the functions of the interface
 	- 10:15am Implemented the interface into the CategoryRepository Class.
 	- 10:30am Created ISP_Call interface and SP_Call Class to work with the database
+
+Sunday Nov 14th
+	- 9:35am Finished creating the SP_Call Class
+	- 9:45am Created both the IUnitOfWork Interface and the UnitOfWork Class to implement the interface.
+	- 
