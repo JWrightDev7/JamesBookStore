@@ -25,6 +25,6 @@ namespace JamesBooks.DataAccess.Repository.IRepository
         void Add(T entity); //used to add an entity
         void remove(int id); //used to remove an entity
         void remove(T entity); //another way to remove entities
-        void removeRange(IEnumerable<T> entity); //used to a range of entities
+        void removeRange(IEnumerable<T> entity); //used to remove a range of entities
     }
 }

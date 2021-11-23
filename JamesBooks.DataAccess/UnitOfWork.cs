@@ -13,12 +13,14 @@ namespace JamesBooks.DataAccess.Repository
         private readonly ApplicationDbContext _db;
         public ICategoryRepository Category { get; private set; }
         public ISP_Call SP_Call { get; private set; }
+        public ICoverTypeRespository CoverTypeRespository { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             Category = new CategoryRepository(_db);
             SP_Call = new SP_Call(_db);
+            CoverTypeRespository = new CoverTypeRepository(_db);
         }
 
         public void Dispose()

@@ -43,3 +43,12 @@ Sunday Nov 14th
 	- 10:10am Created the CategoryController controller and the index.cshtml view for the controller
 	- 10:30am Added the link to the admin categories index page into the dropdown menu on the navigation, Implemented the icons from font awesome and added the category javascript file
 	- 10:45am Finished updating the readme and completed part 2 of the assignment
+
+Tuesday Nov 23rd
+	- 4:00pm Fixed DB Name
+	- 4:05pm Started to create the CoverType.cs Class file in the models project
+	- 4:20pm Finished creating CoverType Repo as well as the CoverType Interface and adding it to the database
+	- 4:30pm Created CoverType Controller and View
+	- 4:45pm Finished Creating CoverType Controller and View and moved onto adding the product class
+	- 5:14pm Finished making the product class and added it to the DB with the migration: 20211123221320_addProductToDb
+	- 
