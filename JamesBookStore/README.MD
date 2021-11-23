@@ -56,6 +56,8 @@ Tuesday Nov 23rd
 	- 5:55pm Started Part 3 Section 2, Created the ProductVM View and the ProductController
 	- 6:10pm Created the CRUD Operations for Products
 	- 6:20pm Created the ProductVM to allow for a select list on the products page
-	- 6:30pm 
+	- 6:30pm Finished creating the Product Controller and adjusting the product.js and index for products
+	- 6:40pm When running got an exception at the getAll method in the Product Controller.
+	- 6:50pm Finished Section 2 of part 3
 	
-Total Hours Worked: 
+Total Hours Worked: 2 Hours 50 Minutes

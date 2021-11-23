@@ -28,6 +28,7 @@ namespace JamesBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        /**
         public IActionResult Upsert(int? id)
         {
             ProductVM productVM = new ProductVM()
@@ -54,13 +55,14 @@ namespace JamesBookStore.Areas.Admin.Controllers
                 return NotFound();
             }
             return View(productVM);
-            
         }
+        */
+
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category, CoverType");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category, CoverType");
             return Json(new { data = allObj });
         }
 
