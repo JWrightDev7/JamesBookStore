@@ -71,13 +71,13 @@ namespace JamesBooks.DataAccess.Repository
             return query.FirstOrDefault();      // returns the IEnumerable based on the conditions of the query
         }
 
-        public void remove(int id)
+        public void Remove(int id)
         {
             T entity = dbSet.Find(id);
-            remove(entity);
+            Remove(entity);
         }
 
-        public void remove(T entity)
+        public void Remove(T entity)
         {
             dbSet.Remove(entity);
         }

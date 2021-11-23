@@ -10,6 +10,9 @@ namespace JamesBooks.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
         ISP_Call SP_Call { get; }
-        ICoverTypeRespository CoverTypeRespository { get; }
+        ICoverTypeRespository CoverType { get; }
+        IProductRepository Product { get; }
+
+        void Save();
     }
 }

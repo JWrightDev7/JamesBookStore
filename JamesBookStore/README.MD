@@ -51,4 +51,11 @@ Tuesday Nov 23rd
 	- 4:30pm Created CoverType Controller and View
 	- 4:45pm Finished Creating CoverType Controller and View and moved onto adding the product class
 	- 5:14pm Finished making the product class and added it to the DB with the migration: 20211123221320_addProductToDb
-	- 
+	- 5:30pm Had issue when creating productRepository class, fixed and re updated the DB
+	- 5:45pm Created IProductRepository and linked it to the main Repository.
+	- 5:55pm Started Part 3 Section 2, Created the ProductVM View and the ProductController
+	- 6:10pm Created the CRUD Operations for Products
+	- 6:20pm Created the ProductVM to allow for a select list on the products page
+	- 6:30pm 
+	
+Total Hours Worked: 

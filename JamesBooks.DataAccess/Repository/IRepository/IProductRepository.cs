@@ -10,6 +10,6 @@ namespace JamesBooks.DataAccess.Repository.IRepository
 {
     public interface IProductRepository : IRepository<Product>
     {
-
+        void update(Product product);
     } 
 }
