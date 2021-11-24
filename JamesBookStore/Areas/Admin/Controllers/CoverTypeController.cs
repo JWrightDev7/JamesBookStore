@@ -1,4 +1,5 @@
 ﻿using JamesBooks.DataAccess.Repository.IRepository;
+using JamesBooks.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,44 @@ namespace JamesBookStore.Areas.Admin.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Upsert(int? id)
+        {
+            CoverType coverType = new CoverType();
+            if (id == null)
+            {
+                return View(coverType);
+            }
+
+            coverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
+            if (coverType == null)
+            {
+                return NotFound();
+            }
+            return View(coverType);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(CoverType coverType)
+        {
+            if (ModelState.IsValid)
+            {
+                if (coverType.Id == 0)
+                {
+                    _unitOfWork.CoverType.Add(coverType);
+                    _unitOfWork.Save();
+                }
+                else
+                {
+                    _unitOfWork.CoverType.Update(coverType);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(coverType);
         }
 
         #region API CALLS

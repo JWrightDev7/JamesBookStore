@@ -9,6 +9,6 @@ namespace JamesBooks.DataAccess.Repository.IRepository
 {
     public interface ICoverTypeRespository : IRepository<CoverType>
     {
-        void update(CoverType coverType);
+        void Update(CoverType coverType);
     }
 }

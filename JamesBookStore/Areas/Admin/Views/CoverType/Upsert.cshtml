@@ -1,18 +1,18 @@
-﻿@model JamesBooks.Models.Category;
+﻿@model JamesBooks.Models.CoverType;
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var title = "Create Category";
+    var title = "Create Cover Type";
 }
 
 <form method="post">
     <div class="row p-3 border">
         <div class="form-group row p-3">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                @if(Model.Id != 0)
+            @if(Model.Id != 0)
                 {
-                    title = "Edit Category";
+                    title = "Edit Cover Type";
                 }
-                
+
             <div class="col-12 border-bottom">
                 <h2 class="text-primary">@title</h2>
             </div>
@@ -29,11 +29,11 @@
                 <div class="form-group row">
                     @if(Model.Id != 0)
                     {
-                        <partial name="_EditAndBackToList" model="Model.Id"/>
+                    <partial name="_EditAndBackToList" model="Model.Id" />
                     }
                     else
                     {
-                        <partial name="_CreateAndBackToListButton"/>
+                    <partial name="_CreateAndBackToListButton" />
                     }
                 </div>
             </div>

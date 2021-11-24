@@ -18,9 +18,15 @@ namespace JamesBooks.DataAccess
             _db = db;
         }
 
-        public void update(CoverType coverType)
+        public void Update(CoverType coverType)
         {
-            throw new NotImplementedException();
+            var objFromDb = _db.CoverTypes.FirstOrDefault(s => s.Id == coverType.Id);
+            if (objFromDb != null)
+            {
+                objFromDb.Name = coverType.Name;
+                _db.SaveChanges(); //saves changes if the obj is not null
+            }
         }
+
     }
 }
