@@ -69,6 +69,19 @@ namespace JamesBookStore.Areas.Admin.Controllers
             var allObj = _unitOfWork.CoverType.GetAll();
             return Json(new { data = allObj });
         }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.CoverType.Get(id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+            _unitOfWork.CoverType.Remove(objFromDb);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete Successful" });
+        }
         #endregion
     }
 }
