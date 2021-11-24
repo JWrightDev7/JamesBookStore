@@ -62,4 +62,7 @@ Tuesday Nov 23rd
 
 Wednesday Nov 24th
 	- 9:30am Fixed upsert method for category
-Total Hours Worked for Part 3: 2 Hours 50 Minutes
+	- 10:00am Fixed Category, CoverType CRUD Operations, they were not working correctly before
+	- 10:45am Finished fixing the CRUD operations for Category and CoverType, was missing the Upsert and delete methods in the controller
+
+Total Hours Worked for Part 3: 3 Hours 50 Minutes
