@@ -60,4 +60,4 @@ Tuesday Nov 23rd
 	- 6:40pm When running got an exception at the getAll method in the Product Controller.
 	- 6:50pm Finished Section 2 of part 3
 	
-Total Hours Worked: 2 Hours 50 Minutes
+Total Hours Worked for Part 3: 2 Hours 50 Minutes
