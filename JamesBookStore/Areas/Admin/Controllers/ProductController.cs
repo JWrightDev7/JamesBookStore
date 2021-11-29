@@ -28,7 +28,6 @@ namespace JamesBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        /**
         public IActionResult Upsert(int? id)
         {
             ProductVM productVM = new ProductVM()
@@ -56,7 +55,27 @@ namespace JamesBookStore.Areas.Admin.Controllers
             }
             return View(productVM);
         }
-        */
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                if(product.Id == 0)
+                {
+                    _unitOfWork.Product.Add(product);
+                }
+                else
+                {
+                    _unitOfWork.Product.update(product);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(product);
+        }
+
 
         #region API CALLS
         [HttpGet]
