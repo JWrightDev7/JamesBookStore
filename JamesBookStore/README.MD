@@ -66,3 +66,11 @@ Wednesday Nov 24th
 	- 10:45am Finished fixing the CRUD operations for Category and CoverType, was missing the Upsert and delete methods in the controller
 
 Total Hours Worked for Part 3: 3 Hours 50 Minutes
+
+Monday Nov 29th
+	- 11:20am Started section 3 for part 3
+	- 11:35am Added functionality to the product upsert and also added the text box from TINY
+	- 11:45am Tested the application and getting error of System.NullReferenceException: 'Object reference not set to an instance of an object.' when creating a new product
+	- 
+
+Total Hours worked for Section 3 Part 3: 
