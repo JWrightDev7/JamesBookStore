@@ -22,9 +22,8 @@ namespace JamesBookStore.Controllers
 
         public IActionResult Index()
         {
-            return View();
-            //IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
-            //return View(productList);
+            IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+            return View(productList);
         }
 
         public IActionResult Privacy()

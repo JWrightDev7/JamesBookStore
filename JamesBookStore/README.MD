@@ -84,5 +84,8 @@ Sunday December 5th
 	- 3:00pm Getting new error when adding an image under create product. System.IO.DirectoryNotFoundException: 'Could not find a part of the path.
 	- 3:30pm Fixed error for the Could not find part of the path
 	- 4:30pm Getting new error after creating a product where the price is not shown and getting an AJAX error
+	- 5:00pm Updated Customer Home view to see the product displayed on the home page.
+	- 
 
-Total Hours worked for Section 3 Part 3: 
+
+Total Hours worked for Part 4: 8 Hours 
