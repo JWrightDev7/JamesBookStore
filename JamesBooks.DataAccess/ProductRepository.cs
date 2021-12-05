@@ -18,12 +18,11 @@ namespace JamesBooks.DataAccess
             _db = db;
         }
 
-        public void update(Product product)
+        public void Update(Product product)
         {
             var objFromDb = _db.Products.FirstOrDefault(s => s.Id == product.Id);
             if (objFromDb != null)
             {
-                _db.SaveChanges(); //saves changes if the obj is not null
                 if (product.ImageUrl != null)
                 {
                     objFromDb.ImageUrl = product.ImageUrl;

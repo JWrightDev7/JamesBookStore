@@ -71,6 +71,18 @@ Monday Nov 29th
 	- 11:20am Started section 3 for part 3
 	- 11:35am Added functionality to the product upsert and also added the text box from TINY
 	- 11:45am Tested the application and getting error of System.NullReferenceException: 'Object reference not set to an instance of an object.' when creating a new product
-	- 
+
+Wednesday December 1st
+	- 3:00pm Working on fixing the NullReferenceError
+	- 4:00pm Continued on with the Part 3 Stage 3 in the assignment and will come back to try and fix the NullReferenceError
+
+Sunday December 5th
+	- 12:15pm Unable to find the fix for the System.NullReferenceException: 'Object reference not set to an instance of an object.' error when creating a new product
+	- 1:00pm Completed Updates the ProductController to check for the image file and allow deletion or creation of it
+	- 1:30pm Completed Updates for the HttpDelete in the product controller to allow for deletion of the image file if it exists
+	- 2:00pm Fixed error for System.NullReferenceException: 'Object reference not set to an instance of an object.', Forgot to add: Product = new ProductRepository(_db); to UnitOfWork.cs
+	- 3:00pm Getting new error when adding an image under create product. System.IO.DirectoryNotFoundException: 'Could not find a part of the path.
+	- 3:30pm Fixed error for the Could not find part of the path
+	- 4:30pm Getting new error after creating a product where the price is not shown and getting an AJAX error
 
 Total Hours worked for Section 3 Part 3: 

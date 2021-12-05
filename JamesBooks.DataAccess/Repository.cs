@@ -82,7 +82,7 @@ namespace JamesBooks.DataAccess.Repository
             dbSet.Remove(entity);
         }
 
-        public void removeRange(IEnumerable<T> entity)
+        public void RemoveRange(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
         }

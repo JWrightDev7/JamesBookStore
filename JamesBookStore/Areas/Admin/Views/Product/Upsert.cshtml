@@ -110,6 +110,14 @@
                 </div>
             </div>
         </div>
+        @if(Model.Product.Id != 0)
+            {
+                <div class="col-3 offset-1 pt-4">
+                    <img src="@Model.Product.ImageUrl" style= "width:100%; border-radius:5px; border:1px solid black;"/>
+                </div>
+            }
+
+
     </div>
 </form>
 

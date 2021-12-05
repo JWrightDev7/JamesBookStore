@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace JamesBooks.DataAccess.Repository.IRepository
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository<T> where T :class
     {
         T Get(int id);
 
@@ -25,6 +25,6 @@ namespace JamesBooks.DataAccess.Repository.IRepository
         void Add(T entity); //used to add an entity
         void Remove(int id); //used to remove an entity
         void Remove(T entity); //another way to remove entities
-        void removeRange(IEnumerable<T> entity); //used to remove a range of entities
+        void RemoveRange(IEnumerable<T> entity); //used to remove a range of entities
     }
 }
