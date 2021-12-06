@@ -86,6 +86,6 @@ Sunday December 5th
 	- 4:30pm Getting new error after creating a product where the price is not shown and getting an AJAX error
 	- 5:00pm Updated Customer Home view to see the product displayed on the home page.
 	- 5:15pm Trying to fix error where price does not display on the product page
-
+	- 7:10pm Fixed the price not showing on product page, had to change the product tables price field name
 
 Total Hours worked for Part 4: 8 Hours 

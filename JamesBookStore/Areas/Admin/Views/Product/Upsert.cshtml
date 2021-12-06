@@ -55,11 +55,11 @@
             </div>
             <div class="form-group row p-2">
                 <div class="col-4">
-                    <label asp-for="Product.ListPrice"></label>
+                    <label asp-for="Product.Price"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Product.ListPrice" class="form-control" />
-                    <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+                    <input asp-for="Product.Price" class="form-control" />
+                    <span asp-validation-for="Product.Price" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group row p-2">
@@ -94,7 +94,7 @@
                 <div class="col-8 offset-4">
                     @if (Model.Product.Id != 0)
                     {
-                        <partial name="_EditAndBackToListButton" model="Model.Product.Id" />
+                        <partial name="_EditAndBackToList" model="Model.Product.Id" />
                     }
                     else
                     {
@@ -110,14 +110,6 @@
                 </div>
             </div>
         </div>
-        @if(Model.Product.Id != 0)
-            {
-                <div class="col-3 offset-1 pt-4">
-                    <img src="@Model.Product.ImageUrl" style= "width:100%; border-radius:5px; border:1px solid black;"/>
-                </div>
-            }
-
-
     </div>
 </form>
 
