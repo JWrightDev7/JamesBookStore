@@ -88,4 +88,5 @@ Sunday December 5th
 	- 5:15pm Trying to fix error where price does not display on the product page
 	- 7:10pm Fixed the price not showing on product page, had to change the product tables price field name
 
-Total Hours worked for Part 4: 8 Hours 
+Total Hours worked for Part 4: 8 Hours
+Total Project Hours: 14 Hours, 25 minutes
